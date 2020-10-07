@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* relative,absolute,fixed,sticky,static */
+.container{
+    width: 90%;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.img-fluid{
+    width: 100%;
+}
+
+.just-around {
+    justify-content: space-around;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+.header{
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.header .menu ul {
+    list-style: none;
+}
+
+.header .menu ul li {
+    padding: 20px;
+}
+
+.header .nav-right i {
+    margin-left: 10px;
+}
+.Gour{
+    background: url(../photo/slider-bg-gourmet-3.jpg);
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+
+}
+.Gour .gour-img{
+    height: 350px;
+    width: 100px;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -120px;
+}
+.Gour .gour-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.Gour .gour-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Gour .gour-text h2 span{
+    margin-left: 20px;
+}
+
+.Gour .gour-text h2{
+    font-size: 3.5em;
+    color:goldenrod
+
+}
+.Chefs{
+    background: url(https://vip-restaurant.vamtam.com/wp-content/uploads/2016/08/shadow-light-bottom.png) repeat-x center top;
+    background-size: auto;
+    background-attachment: scroll;
+    padding-top: 155px;
+    padding-bottom: 0.05px;
+}
+.Chefs .chef-item{
+    width: 25%;
+    padding: 15px;
+}
+.Chefs .chef-item .chef-img{
+    overflow: hidden;
+    background: #000;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+}
+.Chefs .chef-item .chef-img .chef-ico{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 6;
+    transform: translate(-50%,-50%);
+}
+.Chefs .chef-item .chef-img .chef-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 5;
+    opacity: 0;
+    transition: .3s;
+}
+.Chefs .chef-item .chef-img .chef-ico i{
+    margin: 1px;
+    padding: 10px;
+    color:#fff;
+    border:1px solid #fff;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: .3s ease;
+}
+.Chefs .chef-item .chef-img .chef-ico i:hover{
+    background: #fff;
+    color: goldenrod;
+}
+.Chefs .chef-item:hover .chef-img .chef-ico i{
+    opacity: 1;
+    transform: translateY(0);
+}
+.Chefs .chef-item:hover .chef-hover{
+    opacity: .5;
+}
+.Chefs .chef-item:hover img{
+    transform: scale(1.02);
+}
+.Chefs .chef-item img{
+    transition: .4s ease-in-out;
+    transform: scale(1.1);
+    vertical-align: middle;
+}
+.Chefs .chef-item p{
+    margin:15px 0
+}
+.Chefs .chef-item h3{
+    margin: 15px 0;
+}
+.Chefs .chef-item .chef-line{
+    margin: 5px 0;
+    width: 20px;
+    height: 2px;
+    background: goldenrod;
+    transition: width .3s ease-in-out;
+}
+.Chefs .chef-item:hover .chef-line{
+    width: 50px;
+}
+.Menu .menu-item{
+    width: 33.333%;
+    padding: 15px;
+}
+.Menu .menu-item:nth-child(2){
+    padding: 15px 85px;
+}
+
+.Menu .menu-item h2{
+    margin: 20px 0;
+    color:goldenrod
+}
+.Menu .menu-item .menu-content span{
+    color:goldenrod
+}
+.Menu .menu-item .menu-content{
+    margin: 15px 0;
+
+}
+.Menu .menu-item .menu-content .menu-head{
+    border-bottom: 1px dashed #ddd;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}       
